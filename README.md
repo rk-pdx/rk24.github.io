@@ -1,1 +1,2 @@
 # FrontEnd-FP-Crypto-Dashboard
+#(Travis) Initial project built with npx-create-react-app built in src and public folders were deleted. node_modules kept to keep built-ins. My line's submitted in one day(Sunday 21st) will be unreal around 20k, these are almost all from the built in modules/npx readme/ and package-lock.json
