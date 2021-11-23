@@ -2,7 +2,7 @@ import React from 'react'
 import request from 'request';
 
 
-class Dashboard extends React.Component {
+/*class Dashboard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -46,4 +46,4 @@ class Dashboard extends React.Component {
     }
 }
 
-export default Dashboard;
+export default Dashboard;*/
