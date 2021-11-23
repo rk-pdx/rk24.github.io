@@ -1,5 +1,5 @@
-import React from 'react'
-//import axios from 'axios';
+/*import React from 'react'
+import axios from 'axios'
 
 
 class Dashboard extends React.Component {
@@ -46,3 +46,4 @@ class Dashboard extends React.Component {
 }
 
 export default Dashboard;
+*/
