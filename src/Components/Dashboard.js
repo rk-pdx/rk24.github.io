@@ -1,5 +1,5 @@
-/*import React from 'react'
-import request from 'request';//To be modified.
+import React from 'react'
+//import axios from 'axios';
 
 
 class Dashboard extends React.Component {
@@ -12,32 +12,31 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount() {
+        var axios = require("axios").default;
 
-        const rp = require('request-promise');
-        const requestOptions = {
-        method: 'GET',
-        uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',
-        qs: {
-            'start': '1',
-            'limit': '5000',
-            'convert': 'USD'
-        },
-        headers: {
-            'X-CMC_PRO_API_KEY': 'fec80d9c-4bc0-4a57-8d15-4df70cbe9ea9'
-        },
-        json: true,
-        gzip: true
+        var options = {
+            method: 'GET',
+            url: 'https://coinranking1.p.rapidapi.com/coins',
+            headers: {
+                'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
+                'x-rapidapi-key': '744989c25amsh1bcd9639b8a662cp14a242jsneff4a277f4ea'
+            }
         };
 
-        rp(requestOptions).then(response => {
-        console.log('API call response:', response);
-        }).catch((err) => {
-        console.log('API call error:', err.message);
+        axios.request(options).then(function (response) {
+            console.log(response.data.data.coins);
+        }).catch(function (error) {
+            console.error(error);
         });
-      
     }
 
     render() {
+        var { isLoaded, items } = this.state;
+
+        if (!isLoaded) {
+            return <div>Loading currencies...</div>
+        }
+
         return (
             <div className = 'MainDashboard'>
                 Dashboard goes here
@@ -46,4 +45,4 @@ class Dashboard extends React.Component {
     }
 }
 
-export default Dashboard;*/
+export default Dashboard;
