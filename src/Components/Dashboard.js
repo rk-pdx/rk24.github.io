@@ -1,8 +1,8 @@
-import React from 'react'
+/*import React from 'react'
 import request from 'request';//To be modified.
 
 
-/*class Dashboard extends React.Component {
+class Dashboard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
