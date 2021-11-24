@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import Coin from '../Coin/Coin';
 
 
 class Dashboard extends React.Component {
@@ -23,10 +23,15 @@ class Dashboard extends React.Component {
             }
         };
 
-        axios.request(options).then(function (response) {
+        axios.request(options).then((response) => {
             console.log(response.data.data.coins);
+
+            this.setState({
+                items: response.data.data.coins,
+                isLoaded: true
+            })
         }).catch(function (error) {
-            console.error(error);
+            console.log(error);
         });
     }
 
@@ -36,12 +41,21 @@ class Dashboard extends React.Component {
         if (!isLoaded) {
             return <div>Loading currencies...</div>
         }
+        else {
+            return (
+                <div className = 'MainDashboard'>
+                    <ul>
+                        {items.map(item => (
+                            <div key={item.id}>
+                                <Coin name = {item.name} price = {item.price}/>
+                            </div>
+                        ))}
+                    </ul>
+                </div>
+            )
+        }
 
-        return (
-            <div className = 'MainDashboard'>
-                Dashboard goes here
-            </div>
-        )
+
     }
 }
 
