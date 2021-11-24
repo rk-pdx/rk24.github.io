@@ -7,6 +7,7 @@ const App = () => {
         <div>
             <Topbar/>
             <h1>Crypto Dashboard</h1>
+            <Dashboard/>
         </div>
     );
 }

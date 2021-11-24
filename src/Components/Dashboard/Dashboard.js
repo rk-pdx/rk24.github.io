@@ -1,5 +1,6 @@
 import React from 'react'
 import Coin from '../Coin/Coin';
+import "./dashboard.css"
 
 
 class Dashboard extends React.Component {
@@ -43,14 +44,14 @@ class Dashboard extends React.Component {
         }
         else {
             return (
-                <div className = 'MainDashboard'>
-                    <ul>
+                <div className = "MainDashboard">
+                    <div className = "Container">
                         {items.map(item => (
-                            <div key={item.id}>
+                            <div key={item.id} className="Currency">
                                 <Coin name = {item.name} price = {item.price}/>
                             </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
             )
         }

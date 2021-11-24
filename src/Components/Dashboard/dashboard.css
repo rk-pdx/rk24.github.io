@@ -1,0 +1,12 @@
+.MainDashboard {
+    background-color: #eaeff1;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Currency {
+    margin: 20px;
+}
