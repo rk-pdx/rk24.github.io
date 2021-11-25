@@ -3,7 +3,18 @@ import "./coin.css"
 
 function Coin({ rank, name, price }) {
     return (
-        <table>
+        <tr>
+            <td>
+                {rank}
+            </td>
+            <td>
+                {name}
+            </td>
+            <td>
+                {price}
+            </td>
+        </tr>
+        /*<table>
             <tr>
                 <td>
                     {rank}
@@ -15,7 +26,7 @@ function Coin({ rank, name, price }) {
                     {price}
                 </td>
             </tr>
-        </table>
+        </table>*/
         /*<div className="ListItem">
             <div className="Rank"> {rank} </div>
             <div className="HeaderTag">Currency</div>
