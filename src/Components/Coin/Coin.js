@@ -1,5 +1,6 @@
 import React from 'react'
 import "./coin.css"
+import ModalOut from "./ModalOut.js"
 
 function Coin({ name, price }) {
     return (
@@ -11,11 +12,11 @@ function Coin({ name, price }) {
                 <div className="Stat">
                     <div className="Price"> Price: {price} </div>
                 </div>
-                <div className="Stat"> 
-                    <button type="button">Click me</button>
+                    <div className="Stat"> 
+                    
                 </div>
-               
             </div>
+            <ModalOut/>
         </div>
     )
 }
