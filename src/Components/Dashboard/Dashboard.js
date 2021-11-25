@@ -1,5 +1,5 @@
 import React from 'react'
-import Coin from '../Coin/Coin';
+import CurrencyTable from '../CurrencyTable/CurrencyTable';
 import "./dashboard.css"
 
 
@@ -46,18 +46,21 @@ class Dashboard extends React.Component {
             return (
                 <div className = "MainDashboard">
                     <div className = "Container">
-                        {items.map(item => (
-                            <div key={item.id} className="Currency">
-                                <Coin name = {item.name} price = {item.price}/>
-                            </div>
-                        ))}
+                        <CurrencyTable coinArray = {items}/>
                     </div>
                 </div>
             )
         }
-
-
     }
 }
+/*<div className = "MainDashboard">
+                    <div className = "Container">
+                        {items.map(item => (
+                            <div key={item.id} className="Currency">
+                                <Coin rank = {item.rank} name = {item.name} price = {item.price}/>
+                            </div>
+                        ))}
+                    </div>
+                </div>*/
 
 export default Dashboard;

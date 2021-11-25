@@ -1,15 +1,15 @@
-.Card {
+/*.Card {
     display: grid;
     
     grid-template-columns: 280px;
     grid-template-rows:  100px 220px 100px;
     grid-template-areas: "header" "title" "stats";
 
-    font-family: 'Roboto';
+    font-family: 'Arial';
     
     font-weight: normal;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: rgb(53, 51, 58);
 
     text-align: center;
     box-shadow: 5px 5px 15px rgba(102, 102, 102, 0.9);
@@ -21,24 +21,25 @@
     
     padding: 20px;
     
+    color: white;
     font-size: 25px;
     font-weight: 600;
+
     
-  
 }
 
 .HeaderTag {
     grid-area: header;
     margin: 25px;
-    color: rgb(39, 39, 39);
+    color: rgb(114, 114, 114);
     font-size: 15px;
 }
 
 .Name {
     grid-area: title;
-    color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    font-weight: 1000;
+    font-weight: 600;
     padding-top: 30px;
 }
 
@@ -54,4 +55,5 @@
 .Stat .Price{
     
     color: rgb(177, 177, 177);
-}
+}*/
+

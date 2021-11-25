@@ -4,9 +4,10 @@
 
 .Container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.Currency {
+/*.Currency {
     margin: 20px;
-}
+}*/
