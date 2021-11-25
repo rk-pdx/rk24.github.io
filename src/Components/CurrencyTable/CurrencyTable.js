@@ -4,7 +4,7 @@ import "./currencyTable.css"
 
 function CurrencyTable({ coinArray }) {
     return (
-       <table>
+       <table className="Table">
            <tr>
                 <th>
                     Rank

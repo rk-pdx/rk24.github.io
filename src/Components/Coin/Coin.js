@@ -4,7 +4,6 @@ import "./coin.css"
 function Coin({ rank, name, price }) {
     return (
         <table>
-         
             <tr>
                 <td>
                     {rank}
