@@ -1,22 +1,29 @@
 import React from 'react'
 import "./coin.css"
 
-function Coin({ name, price }) {
+function Coin({ rank, name, price }) {
     return (
-        <div className="Card">
-            <div className="Rank">1</div>
+        <table>
+         
+            <tr>
+                <td>
+                    {rank}
+                </td>
+                <td>
+                    {name}
+                </td>
+                <td>
+                    {price}
+                </td>
+            </tr>
+        </table>
+        /*<div className="ListItem">
+            <div className="Rank"> {rank} </div>
             <div className="HeaderTag">Currency</div>
             <div className="Name"> {name} </div>
-            <div className="CoinStats">
-                <div className="Stat">
-                    <div className="Price"> Price: {price} </div>
-                </div>
-                <div className="Stat"> 
-                    <button type="button">Click me</button>
-                </div>
-               
-            </div>
-        </div>
+            <div className="Price"> Price: {price} </div>
+            <button type="button">Click me</button>
+        </div>*/
     )
 }
 
