@@ -1,0 +1,57 @@
+.Card {
+    display: grid;
+    
+    grid-template-columns: 280px;
+    grid-template-rows:  100px 220px 100px;
+    grid-template-areas: "header" "title" "stats";
+
+    font-family: 'Roboto';
+    
+    font-weight: normal;
+    border-radius: 5px;
+    background-color: white;
+
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(102, 102, 102, 0.9);
+}
+
+.Rank {
+    grid-area: header;
+    text-align: left;
+    
+    padding: 20px;
+    
+    font-size: 25px;
+    font-weight: 600;
+    
+  
+}
+
+.HeaderTag {
+    grid-area: header;
+    margin: 25px;
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+}
+
+.Name {
+    grid-area: title;
+    color: rgb(39, 39, 39);
+    font-size: 30px;
+    font-weight: 1000;
+    padding-top: 30px;
+}
+
+.CoinStats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+ 
+   
+}
+
+.Stat .Price{
+    
+    color: rgb(177, 177, 177);
+}
