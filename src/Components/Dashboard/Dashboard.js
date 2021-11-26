@@ -1,6 +1,7 @@
 import React from 'react'
 import CurrencyTable from '../CurrencyTable/CurrencyTable';
 import "./dashboard.css"
+import ModalOut from '../Coin/ModalOut';
 
 
 class Dashboard extends React.Component {

@@ -15,6 +15,7 @@ function Coin({ rank, name, price }) {
                 {price}
             </td>
         </tr>
+
         /*<table>
             <tr>
                 <td>

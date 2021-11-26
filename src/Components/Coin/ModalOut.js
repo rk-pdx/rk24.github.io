@@ -18,13 +18,13 @@ class ModalOut extends React.Component {
             show: !this.state.show
         });
     };
+    
 
     render() {
         return (
             <div className="App">
-                <button onClick={e => {this.showModal();}}> show Modal </button>
-                <Modal onClose={this.showModalt} show={this.state.show}>
-            </Modal>
+                <button onClick={e => {this.showModal();}}>Learn More</button>
+                <Modal onClose={this.showModalt} show={this.state.show}></Modal>
             </div>
         )
     }
