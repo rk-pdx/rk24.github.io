@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "./Modal";
+import "./modalOut.css"
 
 
 class ModalOut extends React.Component {
@@ -23,7 +24,7 @@ class ModalOut extends React.Component {
     render() {
         return (
             <div className="App">
-                <button onClick={e => {this.showModal();}}>Learn More</button>
+                <button class="moreInfo" onClick={e => {this.showModal();}}>Learn More</button>
                 <Modal onClose={this.showModalt} show={this.state.show}></Modal>
             </div>
         )

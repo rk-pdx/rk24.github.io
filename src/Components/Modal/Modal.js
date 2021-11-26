@@ -1,5 +1,5 @@
 import React from "react";
-import "./popup.css";
+import "./modal.css";
 
 export default class Modal extends React.Component {
     onClose = (e) => {
@@ -13,10 +13,10 @@ export default class Modal extends React.Component {
     return (
         <div class="modal" id="modal">
             <div class="content">{this.props.children}
-                <h2> My Popup Window </h2>
-                <div class="actions">
-                    <button onClick={(e) => { this.onClose(e)}}>Close</button>
+            <div class="actions">
+                    <button class="close" onClick={(e) => { this.onClose(e)}}>X</button>
                 </div>
+                <h2> My Popup Window </h2>
                 </div>
         </div>
 

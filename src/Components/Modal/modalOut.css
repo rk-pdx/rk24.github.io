@@ -1,0 +1,6 @@
+
+.moreInfo:hover, .moreInfo:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

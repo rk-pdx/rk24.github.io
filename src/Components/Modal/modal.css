@@ -24,13 +24,22 @@
         width: 80%;
 }
 
-.actions {
-  padding: 0.5rem 1rem;
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
 }
-  
+
+.close:hover,
+.close:focus {
+    color: #000;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 button {
     border: 0;
-    background: #e4e4e4;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
