@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Router, Navigate, Route } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom';
 import Bitcoin from './bitcoin'
 import "./topbar.css"
 
@@ -65,14 +65,23 @@ class Topbar extends React.Component {
 
         /*if (linkTo != "") {
             return (
-                <Router>
-                    
-                        <Route path='/' component={Bitcoin} />
-                   
-                </Router>
+                <div>
+                    <ul>
+                        <li>
+                            <Link to="/path1">Link 1</Link>
+                        </li>
+                        <li>
+                            <Link to="/path2">Link 2</Link>
+                        </li>
+                        <li>
+                            <Link to="/path3">Link 3</Link>
+                        </li>
+                    </ul>
+                </div>
             );
         }*/
 
+        
         return (
             <div>
                 <div className="topbar">
