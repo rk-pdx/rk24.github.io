@@ -1,27 +1,30 @@
 
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed; /*keeps in place on screen*/
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%;
+    overflow: auto; /*scroll*/
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+   
+    z-index: 1;
+
 }
 
 .content {
-    position: fixed; /* or absolute */
+    position: fixed;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
 .close {
@@ -45,9 +48,3 @@ button {
     font-size: 0.8rem;
     line-height: 1;
   }
-
- 
-#centered-toggle-button {
-  position: absolute;
-}
-

@@ -20,7 +20,7 @@ function CurrencyTable({ coinArray }) {
             {coinArray.map(item => (
                 <div key={item.id} className="Row">
                         <Coin rank = {item.rank} name = {item.name} price = {item.price}/>
-                        <ModalOut/>
+                        <ModalOut coin = {item} />
                 </div>
             ))} 
        </table>
