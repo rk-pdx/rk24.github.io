@@ -1,4 +1,13 @@
 
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+.button {
+    align-self: center;
+}
 .moreInfo:hover, .moreInfo:focus {
     color: #000;
     text-decoration: none;

@@ -1,5 +1,4 @@
 import React from "react";
-import Coin from "../Coin/Coin";
 import Modal from "./Modal";
 import "./modalOut.css"
 
@@ -24,7 +23,7 @@ class ModalOut extends React.Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="buttonContainer">
                 <button id="change" class="moreInfo" onClick={e => {this.showModal();}}>info</button>
                 <Modal coin = {this.props.coin} onClose={this.showModalt} show={this.state.show}/>
             </div>

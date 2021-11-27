@@ -1,6 +1,7 @@
 import React from "react";
 import "./modal.css";
 import ModalInfo from "./ModalInfo";
+import LineGraph from "./LineGraph";
 
 export default class Modal extends React.Component {
     onClose = (e) => {
@@ -14,13 +15,13 @@ export default class Modal extends React.Component {
     console.log(this.props.coin)
     return (
         <div class="modal" id="modal">
-            <div class="content">{this.props.children}
-                <div class="actions">
+            <div class="content">
+                <div class="closeContainer">
                     <button class="close" onClick={(e) => { this.onClose(e)}}>X</button>
                 </div>
-                
+                <LineGraph coin = {this.props.coin}/>
                 <ModalInfo coin = {this.props.coin}/>
-                </div>
+            </div>
         </div>
 
     );
