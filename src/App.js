@@ -1,10 +1,32 @@
+import { render } from '@testing-library/react';
 import React from 'react'
 import Dashboard from './Components/Dashboard/Dashboard';
 import Topbar from './Components/Topbar/Topbar';
-import { Router, Link, Route } from 'react-router';
+import "./app.css"
 
 
-const App = () => {
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+           items: []
+        }   
+    }
+
+    render() {
+        return(
+            <div>
+                <Topbar/>
+                <h1>Dashboard</h1>
+                <Dashboard/>
+            </div>
+        );
+    }
+}
+
+export default App
+
+/*const App = () => {
 
     return (
         <div>
@@ -15,4 +37,4 @@ const App = () => {
     );
 }
 
-export default App
+export default App*/

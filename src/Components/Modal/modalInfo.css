@@ -1,0 +1,33 @@
+.coinInfo {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#priceChange,
+#priceChangeNumber,
+#circulatingSupply,
+#circulatingSupplyNumber{
+    font-size: large;
+}
+#priceChange,
+#circulatingSupply {
+    color: rgb(69, 133, 235);
+}
+#priceChangeNumber,
+#circulatingSupplyNumber {
+    margin-left: 15px;
+}
+
+
+.coinPriceChange {
+    display: flex;
+}
+
+.coinCirculatingSupply {
+    display: flex;
+}
+
+
+
+

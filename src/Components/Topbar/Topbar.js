@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Bitcoin from './bitcoin'
 import "./topbar.css"
 
+
+//This class implements the searching functionality.
 class Topbar extends React.Component {
     constructor(props) {
         super(props);
@@ -62,35 +64,13 @@ class Topbar extends React.Component {
 
     render() {
         var { linkTo } = this.state;
-
-        /*if (linkTo != "") {
-            return (
-                <div>
-                    <ul>
-                        <li>
-                            <Link to="/path1">Link 1</Link>
-                        </li>
-                        <li>
-                            <Link to="/path2">Link 2</Link>
-                        </li>
-                        <li>
-                            <Link to="/path3">Link 3</Link>
-                        </li>
-                    </ul>
-                </div>
-            );
-        }*/
-
         
         return (
             <div>
                 <div className="topbar">
                     <div className="topbarContainer">
-                        <div className="title"> My Dashboard</div>
-                        <form onSubmit={this.handleSubmit}>
-                            <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
-                            <button type="submit">Search</button>
-                        </form>
+                        <div className="title"> Cryptocurrency Site</div>
+                           
                     </div>
                 </div>
             </div>
@@ -99,6 +79,14 @@ class Topbar extends React.Component {
 }
 
 export default Topbar;
+
+/*
+ORIGINAL CODE: REMOVED SEARCH BAR
+ <form onSubmit={this.handleSubmit}>
+    <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
+    <button type="submit">Search</button>
+</form>
+*/
 
 //BEN's ORIGINAL CODE
 /*export default function Topbar() {

@@ -1,7 +1,16 @@
 .lineGraph {
-    display: flex;
     margin: auto;
     height: 300px;
-
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+.x-axis {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}

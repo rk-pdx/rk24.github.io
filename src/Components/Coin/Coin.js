@@ -1,9 +1,10 @@
 import React from 'react'
 import "./coin.css"
+import ModalOut from '../Modal/ModalOut'
 
-function Coin({ rank, name, price }) {
+function Coin({coin, rank, name, price }) {
     return (
-        <tr>
+        <tr className="row">
             <td>
                 {rank}
             </td>
@@ -13,6 +14,7 @@ function Coin({ rank, name, price }) {
             <td>
                 {price}
             </td>
+            <td><ModalOut coin = {coin}/></td>
         </tr>
 
         /*<table>

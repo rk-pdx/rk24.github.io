@@ -19,7 +19,7 @@ class ModalOut extends React.Component {
             show: !this.state.show
         });
     };
-  
+
 
     render() {
         return (
