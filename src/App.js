@@ -9,16 +9,36 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-           items: []
-        }   
+           items: [],
+           filterOn: ""
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({filterOn: event.target.value});
+        console.log(this.state.filterOn);
+    }
+
+    handleSubmit(event) {
+        console.log("Submitted")
+        event.preventDefault();
     }
 
     render() {
+        var { filterOn } = this.state;
+
         return(
             <div>
                 <Topbar/>
                 <h1>Dashboard</h1>
-                <Dashboard/>
+                <form  className="SearchForm" onSubmit={this.handleSubmit}>
+                    <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
+                    <button type="submit">Search</button>
+                </form>
+                <Dashboard filterOn={this.state.filterOn}/>
             </div>
         );
     }

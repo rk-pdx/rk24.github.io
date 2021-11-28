@@ -8,7 +8,8 @@ class Dashboard extends React.Component {
         super(props);
         this.state = {
             items: [],
-            isLoaded: false
+            isLoaded: false,
+            filterOn: this.props.filterOn
         }
     }
 
@@ -26,7 +27,7 @@ class Dashboard extends React.Component {
 
         axios.request(options).then((response) => {
             console.log(response.data.data.coins);
-
+            console.log(this.state.filterOn)
             this.setState({
                 items: response.data.data.coins,
                 isLoaded: true
@@ -45,6 +46,10 @@ class Dashboard extends React.Component {
         else {
             return (
                 <div className = "MainDashboard">
+                     <form  className="SearchForm" onSubmit={this.handleSubmit}>
+                        <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
+                        <button type="submit">Search</button>
+                    </form>
                     <div className = "Container">
                         <CurrencyTable coinArray = {items}/>
                     </div>

@@ -1,12 +1,16 @@
-/*
+
 import React from 'react'
 
-function CurrencyTable({ coinData }) {
+
+function CoinData({ data }) {
+    console.log(data.name)
     return (
        <table className="Table">
            <tr>
                 <th>
                     Rank
+                    {data.name}
+                    
                 </th>
                 <th>
                     Name
@@ -39,14 +43,18 @@ function CurrencyTable({ coinData }) {
                     WebsiteURL
                 </th>
             </tr>
-            {coinData.map(item => (
-                <div key={item.id} className="Row">
-                        <Coin rank = {item.rank} name = {item.name} price = {item.price} description = {item.description} circulatingSupply = {item.circulatingSupply} symbol = {item.symbol} numberOfExchanges = {item.numberOfExchanges} numberOfMarkets = {item.numberOfMarkets} slug = {item.slug} uuid = {item.uuid} websiteUrl = {item.websiteUrl} />
-                </div>
-            ))}
+            
+            COINDATA:
+           
        </table>
     )
 }
 
-export default CurrencyTable
-*/
+export default CoinData
+
+//<Coin rank = {item.rank} name = {item.name} price = {item.price} description = {item.description} circulatingSupply = {item.circulatingSupply} symbol = {item.symbol} numberOfExchanges = {item.numberOfExchanges} numberOfMarkets = {item.numberOfMarkets} slug = {item.slug} uuid = {item.uuid} websiteUrl = {item.websiteUrl} />
+/*{coinData.map(item => (
+    <div key={item.id} className="Row">
+                        
+    </div>
+))}*/
