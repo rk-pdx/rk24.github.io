@@ -5,6 +5,13 @@ import LineGraph from "./LineGraph";
 
 
 export default class Modal extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+           linkTo: `../Pages/${this.props.coinName}`
+        }
+    }
+
     onClose = (e) => {
     this.props.onClose && this.props.onClose(e);
   };
