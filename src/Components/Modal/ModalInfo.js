@@ -6,7 +6,7 @@ export default function ModalInfo({coin}) {
         <div className="coinInfo">
             <div>
                 <div className="coinPriceChange">
-                    <div id="priceChange">Price Change 24hr:</div>
+                    <div id="priceChange">Price Change:</div>
                     <div id="priceChangeNumber"> {coin.change}%</div>
                 </div>
             </div>

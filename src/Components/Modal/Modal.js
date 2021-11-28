@@ -3,6 +3,7 @@ import "./modal.css";
 import ModalInfo from "./ModalInfo";
 import LineGraph from "./LineGraph";
 
+
 export default class Modal extends React.Component {
     onClose = (e) => {
     this.props.onClose && this.props.onClose(e);

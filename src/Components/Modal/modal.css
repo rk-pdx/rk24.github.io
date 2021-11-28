@@ -30,7 +30,6 @@
 
 }
 
-
 .modal {
     position: fixed; /*keeps in place on screen*/
     padding-top: 100px; 
@@ -42,7 +41,9 @@
     background-color: rgba(0,0,0,0.4); 
     overflow: scroll;
     z-index: 1;
+    transition: all 1s ease-in-out;
 }
+
 
 .content {
     position: fixed;
@@ -56,6 +57,7 @@
     border: 1px solid #888;
     width: 70%;
     border-radius: 5px;
+    transition: all 1s ease-in-out;
 }
 
 .closeContainer{
