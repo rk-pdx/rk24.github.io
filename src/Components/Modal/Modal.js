@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from 'react-router-dom'
 import "./modal.css";
 import ModalInfo from "./ModalInfo";
 import LineGraph from "./LineGraph";
@@ -31,6 +32,9 @@ export default class Modal extends React.Component {
                 <div className="coinHeader">
                     <div className="coinName"> {coin.name}</div>
                     <div className="coinSymbol"> {coin.symbol}</div>
+                    <div className="buttonContainer">
+                        <button id="change2" class="Details" onClick={() => { (`../Pages/${this.props.coinName}`) }} >Details</button>
+                    </div>
                 </div>
                 <div className="coinPriceContainer"> 
                     <div className="coinPrice"> {coin.price}</div>

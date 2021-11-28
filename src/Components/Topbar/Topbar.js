@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Bitcoin from './bitcoin'
 import "./topbar.css"
 
 
