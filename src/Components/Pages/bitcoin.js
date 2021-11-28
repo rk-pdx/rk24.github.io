@@ -41,7 +41,7 @@ class Bitcoin extends React.Component {
         }
         else {
             return (
-                <div className="MainDashboard">
+                <div className="Bitcoin">
                     <div className="Container">
                         <CoinData coinData={items} />
                     </div>
