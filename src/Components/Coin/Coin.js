@@ -3,7 +3,7 @@ import "./coin.css"
 
 function Coin({ rank, name, price }) {
     return (
-        <tr>
+        <tr className="row">
             <td>
                 {rank}
             </td>
