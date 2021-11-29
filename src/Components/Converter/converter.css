@@ -1,0 +1,35 @@
+.convertContainer {
+    margin: auto;
+    width: 50%;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgrey
+}
+
+.fromContainer,
+.toContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.fromContainer {
+    margin-top: 5px;
+}
+
+.converterInput {
+    display: flex;
+    width: 100%;
+}
+#bruh {
+    pointer-events: none;
+}
+
+#convertValue {
+    pointer-events: none;
+}
+
+#convertSymbol {
+    text-align: center;
+}

@@ -14,7 +14,7 @@ function Coin({ coin, rank, name, price }) {
             <td>
                 {price}
             </td>
-            <td><ModalOut coin = {coin}/></td>
+            
         </tr>
 
         /*<table>

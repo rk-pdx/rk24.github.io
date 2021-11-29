@@ -1,6 +1,5 @@
 import React from 'react'
 import Coin from '../Coin/Coin';
-import ModalOut from '../Modal/ModalOut';
 import "./currencyTable.css"
 
 function CurrencyTable({ coinArray }) {

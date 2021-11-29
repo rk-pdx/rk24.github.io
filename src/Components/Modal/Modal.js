@@ -87,7 +87,7 @@ export default class Modal extends React.Component {
                             <div className="coinSymbol"> {coin.symbol}</div>
                             <div className="buttonContainer">
                                 <button id="change" class="moreInfo" onClick={e => {this.showData();}}>Details</button>
-                                <CurrencyData coin = {this.props.coin} onClose={this.showModalt} show={this.state.show} name={this.props.coin.name}/>
+                                <CurrencyData coin = {this.props.coin} onClose={this.showDatat} show={this.state.show} name={this.props.coin.name}/>
                             </div>
                         </div>
                         <div className="coinPriceContainer"> 
