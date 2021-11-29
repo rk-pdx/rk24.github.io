@@ -9,52 +9,48 @@ function CoinData({ data }) {
            <tr>
                 <th>
                     Rank
-                    {data.name}
-                    
+                    {data.rank}
                 </th>
                 <th>
                     Name
+                    {data.name}
                 </th>
                 <th>
                     Price
-                </th>
-                <th>
-                    Description
+                    {data.price}
                 </th>
                 <th>
                     Circulating Supply
+                    {data.circulatingSupply}
                 </th>
                 <th>
                     Symbol
+                    {data.symbol}
                 </th>
                 <th>
                     Number of Exchanges
+                    {data.numberOfExchanges}
                 </th>
                 <th>
                     Number of Markets
+                    {data.numberOfMarkets}
                 </th>
                 <th>
                     Slug
+                    {data.slug}
                 </th>
                 <th>
                     UUID
+                    {data.uuid}
                 </th>
                 <th>
                     WebsiteURL
+                    {data.websiteUrl}
                 </th>
             </tr>
-            
-            COINDATA:
            
        </table>
     )
 }
 
 export default CoinData
-
-//<Coin rank = {item.rank} name = {item.name} price = {item.price} description = {item.description} circulatingSupply = {item.circulatingSupply} symbol = {item.symbol} numberOfExchanges = {item.numberOfExchanges} numberOfMarkets = {item.numberOfMarkets} slug = {item.slug} uuid = {item.uuid} websiteUrl = {item.websiteUrl} />
-/*{coinData.map(item => (
-    <div key={item.id} className="Row">
-                        
-    </div>
-))}*/
