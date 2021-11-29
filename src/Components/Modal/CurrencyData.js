@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import "./modal.css";
 import LineGraph from "./LineGraph";
 import Bitcoin from "../Pages/bitcoin"
+import OverallPage from "../Pages/OverallPage"
 //IMPORT FROM PAGES
 //BITCOIN...
 //import Bitcoin from ../Pages/bitcoin
@@ -31,7 +32,7 @@ export default class CurrencyData extends React.Component {
                     <button class="close" onClick={(e) => { this.onClose(e)}}>X</button>
                 </div>
                 <div>
-                    <Bitcoin name={this.props.name}/>
+                    <OverallPage coin={this.props.coin}/>
                 </div>
             </div>
         </div>
@@ -46,3 +47,4 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+  //<Bitcoin name={this.props.name}/>

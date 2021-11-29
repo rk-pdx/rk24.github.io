@@ -1,7 +1,6 @@
 
 import React from 'react';
-import Coin from './Coin/Coin';
-
+import Coin from './Coin/SecondModalCoin';
 
 
 function CoinData({ data }) {
@@ -25,14 +24,6 @@ function CoinData({ data }) {
 }
 
 export default CoinData
-
-//<Coin rank = {item.rank} name = {item.name} price = {item.price} description = {item.description} circulatingSupply = {item.circulatingSupply} symbol = {item.symbol} numberOfExchanges = {item.numberOfExchanges} numberOfMarkets = {item.numberOfMarkets} slug = {item.slug} uuid = {item.uuid} websiteUrl = {item.websiteUrl} />
-/*{coinData.map(item => (
-    <div key={item.id} className="Row">
-                        
-    </div>
-))}*/
-
 
 /*
 ORIGINAL RETURN CONTENTS
