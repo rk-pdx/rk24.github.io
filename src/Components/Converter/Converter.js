@@ -68,7 +68,9 @@ export default class Converter extends React.Component {
 
     render() {
     return (
+        
         <form className="convertContainer" onSubmit={this.handleSubmit}>
+            <h2>Crypto Converter</h2>
             <div className="box">
             <div className="fromContainer">
                 <label> From</label>
@@ -82,7 +84,7 @@ export default class Converter extends React.Component {
                     <input type='text' placeholder="0.00" value={this.state.amountValue} onChange={this.handleAmount}></input>
                 </div>
             </div>
-            <div id="convertSymbol"> ||</div>
+
             <div className="toContainer">
                 <label> To</label>
                 <div className="converterInput">
