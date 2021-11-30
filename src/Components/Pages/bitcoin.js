@@ -40,7 +40,6 @@ class Bitcoin extends React.Component {
     render () {
         return (
             <div>
-                BITCOIN
                 <CoinData data={this.state.item} />
             </div>
         );

@@ -1,12 +1,12 @@
 
 import React from 'react';
 import Coin from './Coin/SecondModalCoin';
+import { List } from 'semantic-ui-react';
 
 
-function CoinData({ data }) {
-    console.log(data.name)
+/*function CoinData({ data }) {
     return (
-        <table className="Table">
+        <table className="Data">
            <tr>
                 <th>
                     Rank
@@ -22,7 +22,26 @@ function CoinData({ data }) {
        </table>
     )
 }
+*/
 
+function CoinData({ data }) {
+    return (
+        <table className="Data">
+            <List>
+                <List.Item>Rank: {data.rank}</List.Item>
+                <List.Item>Name: {data.name}</List.Item>
+                <List.Item>Price: {data.price}</List.Item>
+                <List.Item>Circulating Supply: {data.circulatingSupply}</List.Item>
+                <List.Item>Symbol: {data.symbol}</List.Item>
+                <List.Item>Number of Exchanges: {data.numberOfExchanges}</List.Item>
+                <List.Item>Number of Markets: {data.numberOfMarkets}</List.Item>
+                <List.Item>Slug: {data.slug}</List.Item>
+                <List.Item>UUID: {data.uuid}</List.Item>
+                <List.Item>URL: {data.websiteUrl}</List.Item>
+            </List>
+       </table>
+    )
+}
 export default CoinData
 
 /*

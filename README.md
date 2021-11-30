@@ -13,3 +13,4 @@ axios
 react-router-dom
 chart.js
 chart-js-2
+semantic-ui-react
