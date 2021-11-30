@@ -19,6 +19,9 @@ function CurrencyTable({ coinArray, filterOn }) {
                 <th>
                     Price
                 </th>
+                <th>
+                    info
+                </th>
               </tr>
                 <div>
                     <Coin coin = {filteredCoin} rank = {filteredCoin.rank} name = {filteredCoin.name} price = {filteredCoin.price}/>
@@ -40,6 +43,11 @@ function CurrencyTable({ coinArray, filterOn }) {
                 </th>
                 <th>
                     Price
+                </th>
+                <th>
+                <div className="buttonContainer">
+                    <button id="change" class="infoButton" >Info</button>
+            </div>
                 </th>
             </tr>
             {coinArray.map(item => (
