@@ -1,5 +1,7 @@
 import React from 'react'
 import CoinData from '../CoinData';
+import { List } from 'semantic-ui-react';
+
 
 class Bitcoin extends React.Component {
     constructor(props) {
@@ -40,7 +42,18 @@ class Bitcoin extends React.Component {
     render () {
         return (
             <div>
-                <CoinData data={this.state.item} />
+                <List>
+                    <List.Item>Rank: {this.state.item.rank}</List.Item>
+                    <List.Item>Name: {this.state.item.name}</List.Item>
+                    <List.Item>Price: {this.state.item.price}</List.Item>
+                    <List.Item>Circulating Supply: {this.state.item.circulatingSupply}</List.Item>
+                    <List.Item>Symbol: {this.state.item.symbol}</List.Item>
+                    <List.Item>Number of Exchanges: {this.state.item.numberOfExchanges}</List.Item>
+                    <List.Item>Number of Markets: {this.state.item.numberOfMarkets}</List.Item>
+                    <List.Item>Slug: {this.state.item.slug}</List.Item>
+                    <List.Item>UUID: {this.state.item.uuid}</List.Item>
+                    <List.Item>URL: {this.state.item.websiteUrl}</List.Item>
+                </List>
             </div>
         );
     }
