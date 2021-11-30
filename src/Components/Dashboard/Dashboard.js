@@ -59,6 +59,8 @@ class Dashboard extends React.Component {
             console.log(this.state.userInput)
             return (
                 <div className = "MainDashboard">
+                                    <h1>Dashboard</h1>
+
                      <form  className="SearchForm" onSubmit={this.handleSubmit}>
                         <input className= "searchBar" type="text" placeholder="FILTER BY CURRENCY..." onChange={this.handleChange}></input>
                        

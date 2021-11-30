@@ -4,7 +4,8 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Topbar from './Components/Topbar/Topbar';
 import "./app.css"
 import Converter from './Components/Converter/Converter';
-
+import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -16,8 +17,6 @@ class App extends React.Component {
             filterOnApi: this.props.filterOnApi,
             filterOn: ""
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     componentDidMount() {
@@ -44,17 +43,6 @@ class App extends React.Component {
         });
     }
 
-        
-
-    handleChange(event) {
-        this.setState({filterOn: event.target.value});
-        console.log(this.state.filterOn);
-    }
-
-    handleSubmit(event) {
-        console.log("Submitted")
-        event.preventDefault();
-    }
 
     render() {
         var { filterOn } = this.state;
@@ -62,15 +50,17 @@ class App extends React.Component {
 
         return(
             <div>
-                <Topbar/>
-               
-                <h1>Dashboard</h1>
-                <form  className="SearchForm" onSubmit={this.handleSubmit}>
-                    <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
-                    <button type="submit">Search</button>
-                </form>
-                <Converter coins = {items}></Converter>
-                <Dashboard filterOn={this.state.filterOn}/>
+                 <Topbar/>
+                <Router>
+                    <ul class="NavigationBar">
+                        <li class="IndividualNav"><Link to="/">Dashboard</Link></li>
+                        <li class="IndividualNav"><Link to="/cryptoconverter">Crypto-Converter</Link></li>
+                    </ul>
+                    <Routes>
+                        <Route exact path='/' element={<Dashboard filterOn={this.state.filterOn}/>} />
+                        <Route exact path='/cryptoconverter' element={<Converter coins = {items}></Converter>} />
+                    </Routes>
+                </Router>
             </div>
         );
     }
