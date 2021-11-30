@@ -3,13 +3,28 @@ import Coin from '../Coin/Coin';
 import "./currencyTable.css"
 
 function CurrencyTable({ coinArray, filterOn }) {
+    //Filtering mechanism:
     for (let i = 0; i < coinArray.length; i++) {
-        if (filterOn == coinArray[i].name) {
+        if (filterOn.toLowerCase() == coinArray[i].name.toLowerCase()) {
             let filteredCoin = coinArray[i];
             return (
+                <table className="Table">
+                <tr>
+                <th>
+                    Rank
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Price
+                </th>
+              </tr>
                 <div>
                     <Coin coin = {filteredCoin} rank = {filteredCoin.rank} name = {filteredCoin.name} price = {filteredCoin.price}/>
                 </div>
+       </table>
+               
             );
         }  
     }

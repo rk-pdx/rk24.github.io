@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        //this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     componentDidMount() {
@@ -47,15 +47,7 @@ class Dashboard extends React.Component {
         //console.log(this.state.userInput);
     }
 
-    handleSubmit(event) {
-        console.log("Submitted")
-        //Prevents the webpage from reloading:
-        event.preventDefault();
-        //Employ trick to only consider state after user submits form:
-        //this.setState({userInput: event.target.value});
-        console.log(this.state.userInput);
-        
-    }
+    
 
     render() {
         var { isLoaded, items } = this.state;
@@ -68,8 +60,8 @@ class Dashboard extends React.Component {
             return (
                 <div className = "MainDashboard">
                      <form  className="SearchForm" onSubmit={this.handleSubmit}>
-                        <input className= "searchBar" type="text" placeholder="Search" onChange={this.handleChange}></input>
-                        <button type="submit">Search</button>
+                        <input className= "searchBar" type="text" placeholder="FILTER BY CURRENCY..." onChange={this.handleChange}></input>
+                       
                     </form>
                     <div className = "Container">
                         <CurrencyTable coinArray = {items} filterOn = {this.state.userInput}/>
