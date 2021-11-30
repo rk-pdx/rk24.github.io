@@ -69,6 +69,7 @@ export default class Converter extends React.Component {
     render() {
     return (
         <form className="convertContainer" onSubmit={this.handleSubmit}>
+            <div className="box">
             <div className="fromContainer">
                 <label> From</label>
                 <div className="converterInput">
@@ -95,7 +96,8 @@ export default class Converter extends React.Component {
                         this.convert(this.props.coins)
                         }></input>
                 </div>
-            </div>  
+            </div> 
+            </div> 
         </form>
     )
     }

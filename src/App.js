@@ -50,7 +50,7 @@ class App extends React.Component {
 
         return(
             <div>
-                 <Topbar/>
+                <Topbar/>
                 <Router>
                     <ul class="NavigationBar">
                         <li class="IndividualNav"><Link to="/">Dashboard</Link></li>
