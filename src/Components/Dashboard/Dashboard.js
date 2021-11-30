@@ -9,8 +9,13 @@ class Dashboard extends React.Component {
         this.state = {
             items: [],
             isLoaded: false,
-            filterOn: this.props.filterOn
+            filterOn: this.props.filterOn,
+            userInput: "",
+            searchInput: ""
         }
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     componentDidMount() {
@@ -37,6 +42,21 @@ class Dashboard extends React.Component {
         });
     }
 
+    handleChange(event) {
+        this.setState({userInput: event.target.value});
+        //console.log(this.state.userInput);
+    }
+
+    handleSubmit(event) {
+        console.log("Submitted")
+        //Prevents the webpage from reloading:
+        event.preventDefault();
+        //Employ trick to only consider state after user submits form:
+        //this.setState({userInput: event.target.value});
+        console.log(this.state.userInput);
+        
+    }
+
     render() {
         var { isLoaded, items } = this.state;
 
@@ -44,6 +64,7 @@ class Dashboard extends React.Component {
             return <div>Loading currencies...</div>
         }
         else {
+            console.log(this.state.userInput)
             return (
                 <div className = "MainDashboard">
                      <form  className="SearchForm" onSubmit={this.handleSubmit}>
@@ -51,7 +72,7 @@ class Dashboard extends React.Component {
                         <button type="submit">Search</button>
                     </form>
                     <div className = "Container">
-                        <CurrencyTable coinArray = {items}/>
+                        <CurrencyTable coinArray = {items} filterOn = {this.state.userInput}/>
                     </div>
                 </div>
             )

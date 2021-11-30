@@ -12,12 +12,13 @@ class OverallPage extends React.Component {
     render () {
         return (
             <div>
-                BITCOIN
                 <CoinData data={this.state.item} />
             </div>
         );
     }
-    /*constructor(props) {
+    /*
+    KEEPING THE ORIGINAL STUFF IN CASE THE NEW STUFF DOESNT WORK
+    constructor(props) {
         super(props);
         this.state = {
             items: [],
