@@ -53,8 +53,10 @@ class App extends React.Component {
                 <Topbar/>
                 <Router>
                     <ul class="NavigationBar">
-                        <li class="IndividualNav"><Link to="/">Dashboard</Link></li>
-                        <li class="IndividualNav"><Link to="/cryptoconverter">Crypto-Converter</Link></li>
+                        <ul class="NavigationContainer"> 
+                            <li class="IndividualNav"><Link to="/">Dashboard</Link></li>
+                            <li class="IndividualNav"><Link to="/cryptoconverter">Crypto-Converter</Link></li>
+                        </ul>
                     </ul>
                     <Routes>
                         <Route exact path='/' element={<Dashboard filterOn={this.state.filterOn}/>} />
