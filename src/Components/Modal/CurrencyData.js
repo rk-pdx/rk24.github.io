@@ -4,6 +4,7 @@ import "./modal.css";
 import LineGraph from "./LineGraph";
 import Bitcoin from "../Pages/bitcoin"
 import OverallPage from "../Pages/OverallPage"
+import "./currencyData.css"
 //IMPORT FROM PAGES
 //BITCOIN...
 //import Bitcoin from ../Pages/bitcoin
@@ -31,7 +32,7 @@ export default class CurrencyData extends React.Component {
                 <div class="closeContainer">
                     <button class="close" onClick={(e) => { this.onClose(e)}}>X</button>
                 </div>
-                <div>
+                <div id="modalTwoContainer">
                     <OverallPage coin={this.props.coin}/>
                 </div>
             </div>

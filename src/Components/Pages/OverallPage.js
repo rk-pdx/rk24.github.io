@@ -11,7 +11,7 @@ class OverallPage extends React.Component {
 
     render () {
         return (
-            <div>
+            <div id="modalTwo">
                 <CoinData data={this.state.item} />
             </div>
         );
