@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rk24.github.io/static/css/main.97b632ff.chunk.css",
+    "main.js": "/rk24.github.io/static/js/main.72ed59d6.chunk.js",
+    "main.js.map": "/rk24.github.io/static/js/main.72ed59d6.chunk.js.map",
+    "runtime-main.js": "/rk24.github.io/static/js/runtime-main.ade2fc3b.js",
+    "runtime-main.js.map": "/rk24.github.io/static/js/runtime-main.ade2fc3b.js.map",
+    "static/js/2.bab22275.chunk.js": "/rk24.github.io/static/js/2.bab22275.chunk.js",
+    "static/js/2.bab22275.chunk.js.map": "/rk24.github.io/static/js/2.bab22275.chunk.js.map",
+    "index.html": "/rk24.github.io/index.html",
+    "static/css/main.97b632ff.chunk.css.map": "/rk24.github.io/static/css/main.97b632ff.chunk.css.map",
+    "static/js/2.bab22275.chunk.js.LICENSE.txt": "/rk24.github.io/static/js/2.bab22275.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ade2fc3b.js",
+    "static/js/2.bab22275.chunk.js",
+    "static/css/main.97b632ff.chunk.css",
+    "static/js/main.72ed59d6.chunk.js"
+  ]
+}
