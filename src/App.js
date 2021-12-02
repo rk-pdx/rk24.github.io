@@ -1,10 +1,9 @@
-import { render } from '@testing-library/react';
 import React from 'react'
 import Dashboard from './Components/Dashboard/Dashboard';
 import Topbar from './Components/Topbar/Topbar';
 import "./app.css"
 import Converter from './Components/Converter/Converter';
-import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 
@@ -15,7 +14,6 @@ class App extends React.Component {
             items: [],
             isLoaded: false,
             filterOnApi: this.props.filterOnApi,
-            filterOn: ""
         }
     }
 
@@ -45,8 +43,7 @@ class App extends React.Component {
 
 
     render() {
-        var { filterOn } = this.state;
-        var { isLoaded, items } = this.state;
+        var { items } = this.state;
 
         return(
             <div>

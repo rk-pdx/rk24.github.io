@@ -12,7 +12,6 @@ import {
     Tooltip,
     Legend,
   } from 'chart.js';
-import { isCompositeComponentWithType } from 'react-dom/test-utils';
 
   ChartJS.register(
     CategoryScale,

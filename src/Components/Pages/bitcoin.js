@@ -1,5 +1,4 @@
 import React from 'react'
-import CoinData from '../CoinData';
 import { List } from 'semantic-ui-react';
 
 
@@ -26,7 +25,7 @@ class Bitcoin extends React.Component {
 
         axios.request(options).then((response) => {
             for (let i = 0; i < response.data.data.coins.length; i++) {
-                if (response.data.data.coins[i].name == this.state.name) {
+                if (response.data.data.coins[i].name === this.state.name) {
                     this.setState({
                         item: response.data.data.coins[i]
                     })

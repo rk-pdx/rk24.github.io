@@ -1,19 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import "./modal.css";
 import CurrencyData from "./CurrencyData";
 import ModalInfo from "./ModalInfo";
 import LineGraph from "./LineGraph";
-import Bitcoin from "../Pages/bitcoin"
 
 
 export default class Modal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-           linkTo: "",
            show: false
         }
 
@@ -50,7 +45,6 @@ export default class Modal extends React.Component {
     }
 
     render() {
-        var { linkTo } = this.state;
 
         if (!this.props.show) {
             return null;

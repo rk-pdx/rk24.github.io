@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Coin from './Coin/SecondModalCoin';
 import { List } from 'semantic-ui-react';
 
 

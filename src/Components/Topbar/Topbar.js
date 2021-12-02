@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import "./topbar.css"
 
 
@@ -10,7 +9,6 @@ class Topbar extends React.Component {
         this.state = {
             userInput: "",
             items: [],
-            linkTo: ""
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -51,18 +49,15 @@ class Topbar extends React.Component {
         event.preventDefault();
 
         for (let i = 0; i < this.state.items.length; i++) {
-            if (this.state.userInput == this.state.items[i].name) {
+            if (this.state.userInput === this.state.items[i].name) {
                 console.log("match")
-                let tempStr = `/${this.state.userInput}`
                 this.setState({
-                    linkTo: tempStr 
                 })
             } 
         }
     }
 
     render() {
-        var { linkTo } = this.state;
         
         return (
             <div>

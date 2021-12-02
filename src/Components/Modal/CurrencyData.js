@@ -1,8 +1,5 @@
 import React from "react";
-import { Route } from 'react-router-dom'
 import "./modal.css";
-import LineGraph from "./LineGraph";
-import Bitcoin from "../Pages/bitcoin"
 import OverallPage from "../Pages/OverallPage"
 import "./currencyData.css"
 //IMPORT FROM PAGES
@@ -11,9 +8,6 @@ import "./currencyData.css"
 //this.props.coin.name
 //<{this.props.coin.name}/>
 
-const components = {
-    Bitcoin: Bitcoin,
-};
 
 export default class CurrencyData extends React.Component {
     onClose = (e) => {
@@ -25,7 +19,6 @@ export default class CurrencyData extends React.Component {
         return null;
     }
     console.log(this.props.coin)
-    let coin = this.props.coin
     return (
         <div class="modal" id="modal">
             <div class="content">

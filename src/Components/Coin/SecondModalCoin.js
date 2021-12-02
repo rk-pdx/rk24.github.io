@@ -1,6 +1,5 @@
 import React from 'react'
 import "./coin.css"
-import ModalOut from '../Modal/ModalOut'
 
 function Coin({ coin, rank, name, price }) {
     return (

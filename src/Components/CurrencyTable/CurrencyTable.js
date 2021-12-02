@@ -5,7 +5,7 @@ import "./currencyTable.css"
 function CurrencyTable({ coinArray, filterOn }) {
     //Filtering mechanism:
     for (let i = 0; i < coinArray.length; i++) {
-        if (filterOn.toLowerCase() == coinArray[i].name.toLowerCase()) {
+        if (filterOn.toLowerCase() === coinArray[i].name.toLowerCase()) {
             let filteredCoin = coinArray[i];
             return (
                 <table className="Table">
